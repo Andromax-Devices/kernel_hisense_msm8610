@@ -31,6 +31,7 @@
 #include <sound/q6afe-v2.h>
 #include <linux/module.h>
 #include <mach/gpiomux.h>
+#include "qdsp6v2/msm-pcm-routing-v2.h"
 #include "../codecs/msm8x10-wcd.h"
 #include "qdsp6v2/q6core.h"
 #define DRV_NAME "msm8x10-asoc-wcd"
