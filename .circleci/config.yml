@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: rama982/dokar:latest
+    steps:
+      - checkout
+      - run: wget https://gitlab.com/dodyirawan85/scripts/raw/master/build-msm8610-on-docker.sh
+      - run: bash build-msm8610-on-docker.sh
