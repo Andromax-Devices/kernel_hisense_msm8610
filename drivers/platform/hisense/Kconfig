@@ -1,0 +1,24 @@
+# Hisense configuration options
+
+config MACH_HISENSE
+	bool "Hisense device"
+	depends on ARCH_MSM
+	help
+	  Support for Hisense products
+
+config MACH_HISENSE_MSM8610
+	bool "Hisense MSM8610"
+	depends on ARCH_MSM8610
+	select MACH_HISENSE
+	help
+	  Support for MSM8610 Hisense variants
+
+menu "Hisense board selection"
+
+config MACH_RENDANG
+	bool "Ad688g board"
+	select MACH_HISENSE_MSM8610
+	help
+	  Support for Hisense AD688G (C2) variant
+
+endmenu
